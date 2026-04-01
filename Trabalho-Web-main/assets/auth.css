@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6d82e0, #8a55c9);
+  padding: 20px;
+}
+
+.container {
+  width: 900px;
+  max-width: 100%;
+  min-height: 500px;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  background: white;
+}
+
+.login-box {
+  width: 50%;
+  background: #f3f3f3;
+  padding: 70px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-box h2 {
+  font-size: 26px;
+  color: #222;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.login-box label {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 8px;
+  margin-top: 10px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d4d4d4;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  background: white;
+  margin-bottom: 8px;
+}
+
+.login-box input:focus {
+  border-color: #4caf50;
+}
+
+.login-box button {
+  margin-top: 25px;
+  width: 100%;
+  padding: 14px;
+  background: #4caf50;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-box button:hover {
+  background: #43a047;
+}
+
+.cadastro-texto {
+  text-align: center;
+  margin-top: 18px;
+  color: #777;
+  font-size: 14px;
+}
+
+.cadastro-texto a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.cadastro-texto a:hover {
+  text-decoration: underline;
+}
+
+.info-box {
+  width: 50%;
+  padding: 40px 25px;
+  background: linear-gradient(135deg, #0f4f1f, #1f6a2c);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-box h1 {
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+.info-card {
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 14px;
+  padding: 18px 16px;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.info-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.info-card p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .login-box,
+  .info-box {
+    width: 100%;
+  }
+
+  .login-box {
+    padding: 40px 30px;
+  }
+
+  .info-box {
+    padding: 30px 20px;
+  }
+}
